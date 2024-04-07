@@ -13,10 +13,10 @@ import shutil
 import random
 
 # Chemin vers le dossier contenant les images
-dossier_images = "/content/drive/My Drive/ProjetP6/DataProjet3/images"
-dossier_labels = "/content/drive/My Drive/ProjetP6/DataProjet3/labels"
-dossier_images_test = "/content/drive/My Drive/ProjetP6/DataProjet4/images"
-dossier_labels_test = "/content/drive/My Drive/ProjetP6/DataProjet4/labels"
+dossier_images = "/content/drive/My Drive/ProjetP6/DataTraining/images"
+dossier_labels = "/content/drive/My Drive/ProjetP6/DataTraining/labels"
+dossier_images_test = "/content/drive/My Drive/ProjetP6/DataValidation/images"
+dossier_labels_test = "/content/drive/My Drive/ProjetP6/DataValidation/labels"
 
 # Liste des noms de fichiers dans le dossier images
 fichiers_images = sorted(os.listdir(dossier_images))
