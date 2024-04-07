@@ -1,0 +1,15 @@
+path: /content/drive/MyDrive/ProjetP6  # dossier racine du jeu de données
+train: DataProjet3/images # images d'entraînement (chemin relatif par rapport à 'path')
+val: DataProjet4/images # fichiers de validation (chemin relatif par rapport à 'path')
+test: DataProjet4/images
+
+# Classes
+names:
+  0: Bonne
+  1: Coupe
+  2: Difforme
+  3: Mdt
+  4: Pourrie
+  5: Verte
+  6: Cailloux
+
