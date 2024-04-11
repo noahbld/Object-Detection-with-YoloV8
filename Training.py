@@ -18,21 +18,17 @@ dossier_labels = "/content/drive/My Drive/ProjetP6/DataTraining/labels"
 dossier_images_test = "/content/drive/My Drive/ProjetP6/DataValidation/images"
 dossier_labels_test = "/content/drive/My Drive/ProjetP6/DataValidation/labels"
 
-# Liste des noms de fichiers dans le dossier images
+
 fichiers_images = sorted(os.listdir(dossier_images))
 fichiers_labels = sorted(os.listdir(dossier_labels))
 
-# Mélanger aléatoirement les index des fichiers
 indexes = list(range(len(fichiers_images)))
 random.shuffle(indexes)
 
-# Calculer le nombre d'images pour l'ensemble de test
 nb_images_test = int(0.2* len(fichiers_images))
 
-# Sélectionner les index pour l'ensemble de test
 indexes_test = indexes[:nb_images_test]
 
-# Déplacer les fichiers de l'ensemble de test vers les dossiers images_test et labels_test
 for index in indexes_test:
     fichier_image = fichiers_images[index]
     fichier_label = fichiers_labels[index]
